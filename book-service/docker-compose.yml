@@ -1,0 +1,10 @@
+version: "2.1"
+services: 
+  gin-web:
+    build: .
+    image: gin-web:1.0.1
+    environment: 
+      - PORT=8080
+    ports: 
+      - "8080:8080"
+    command: /go/bin/gin-web
